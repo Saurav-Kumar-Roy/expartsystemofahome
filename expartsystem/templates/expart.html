@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <main class="px-3">
+    <h1>{{data.heading}}</h1>
+    <p class="lead">{{data.ques}}</p>
+    <p class="lead">
+      <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=
+      '{{data.url1}}'">{{data.b1}}</button>
+      <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href=
+      '{{data.url2}}'">{{data.b2}}</button>
+    </p>
+  </main>
+
+{% endblock %}
